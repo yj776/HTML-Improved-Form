@@ -15,24 +15,33 @@
         <form method="GET" action="results.html">
             <div>
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <span class="required-field">*</span>
+                <input type="text" required id="firstname" name="firstname" minlength="2" maxlength="35">
                 <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <span class="required-field">*</span>
+                <input type="text" required id="lastname" name="lastname" minlength="2" maxlenth="35">
+                <label for="age">Your Age</label>
+                <span class="required-field">*</span>
+                <input type="number" required minlength="20" maxlength="120">
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
                 <div>
                     <label for="email">Your Email</label>
+                    <span class="required-field">*</span>
                     <input type="email" id="email" name="email">
                 </div>
                 <div>
                     <label for="address">Your Street Address</label>
+                    <span class="required-field">*</span>
                     <input type="text" id="address" name="address">
                 </div>
                 <div>
                     <label for="city">Your City</label>
+                    <span class="required-field">*</span>
                     <input type="text" id="city" name="city">
                     <label for="state">Your State</label>
+                    <span class="required-field">*</span>
                     <input list="state-list" id="state" name="state">
                     <datalist id="state-list">
                         <option value="AK">Alaska</option>
@@ -86,7 +95,8 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="text" id="zip" name="zip">
+                    <span class="required-field">*</span>
+                    <input type="number" id="zip" name="zip">
                 </div>
             </fieldset>
 
